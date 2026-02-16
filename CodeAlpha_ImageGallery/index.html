@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>IMAGE GALLERY</h1>
+    <div class="filters">
+        <button onclick="filterImage('all')">All</button>
+        <button onclick="filterImage('nature')">Nature</button>
+        <button onclick="filterImage('cars')">Cars</button>
+    </div>
+
+    <div class="gallery">
+        <img src="download.jpg" class="nature" onclick="openLightbox(0)">
+        <img src="car 1.jpg" class="cars" data-title="BMW M5" data-description="A high performance sports car withtwin turbo engine." onclick="openLightbox(1)"> 
+        <img src="3.jpg" class="nature" onclick="openLightbox(2)">
+        <img src="car 2.jpg" class="cars" onclick="openLightbox(3)">
+        <img src="11.jpg" class="nature" onclick="openLightbox(4)">
+        <img src="c3.jpg" class="cars" onclick="openLightbox(5)">
+        <img src="10.jpg" class="nature" onclick="openLightbox(6)">
+        <img src="c4.jpg" class="cars" onclick="openLightbox(7)">
+        <img src="9.jpg" class="nature" onclick="openLightbox(8)">
+        <img src="C5.jpg" class="cars" onclick="openLightbox(9)">
+        <img src="8.jpg" class="nature" onclick="openLightbox(10)">
+        <img src="C6.jpg" class="cars" onclick="openLightbox(11)">
+        <img src="7.jpg" class="nature" onclick="openLightbox(12)">
+        <img src="C8.jpg" class="cars" onclick="openLightbox(13)">
+        <img src="6.jpg" class="nature" onclick="openLightbox(14)">
+        <img src="C9.jpg" class="cars" onclick="openLightbox(15)">
+        <img src="5.jpg" class="nature" onclick="openLightbox(16)">
+        <img src="C10.jpg" class="cars" onclick="openLightbox(17)">
+        <img src="4.jpg" class="nature" onclick="openLightbox(18)">
+        <img src="C11.jpg" class="cars" onclick="openLightbox(19)">
+    </div>
+    
+    <div class="lightbox" id="lightbox">    
+        <span class="close" onclick="closeLightbox()"></span>
+        <span class="nav prev" onclick="changeImage(-1)"></span>
+        <img id="lightboxImg">
+        <span class="nav next" onclick="changeImage(1)"></span>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
+
